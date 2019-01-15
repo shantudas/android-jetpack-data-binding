@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_margin="2dp"
+            android:layout_margin="1dp"
             android:scaleType="centerCrop"
             bind:imageUrl="@{post.postImages.lowResolution.imageUrl}" />
 

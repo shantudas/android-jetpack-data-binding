@@ -5,15 +5,24 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitRequest {
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://api.instagram.com/";
+    private static RetrofitRequest mInstance;
+    private static final String BASE_URL = Constants.API_BASE_URL;
 
-    public static Retrofit getRetrofitInstance() {
-        if (retrofit == null) {
-            retrofit = new retrofit2.Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
+    private RetrofitRequest() {
+        retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+    }
+
+    public static synchronized RetrofitRequest getInstance() {
+        if (mInstance == null) {
+            mInstance = new RetrofitRequest();
         }
-        return retrofit;
+        return mInstance;
+    }
+
+    public ApiRequest getApi() {
+        return retrofit.create(ApiRequest.class);
     }
 }
