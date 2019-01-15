@@ -16,4 +16,16 @@ public class PostImages {
     public void setThumbnail(Thumbnail thumbnail) {
         this.thumbnail = thumbnail;
     }
+
+    @SerializedName("low_resolution")
+    @Expose
+    private LowResolution lowResolution;
+
+    public LowResolution getLowResolution() {
+        return lowResolution;
+    }
+
+    public void setLowResolution(LowResolution lowResolution) {
+        this.lowResolution = lowResolution;
+    }
 }

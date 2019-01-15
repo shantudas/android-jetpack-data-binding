@@ -4,6 +4,7 @@ import android.databinding.BindingAdapter;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class User {
 
@@ -65,6 +66,7 @@ public class User {
     public static void loadImage(ImageView view, String profile_picture) {
         Glide.with(view.getContext())
                 .load(profile_picture)
+                .apply(RequestOptions.circleCropTransform())
                 .into(view);
     }
 

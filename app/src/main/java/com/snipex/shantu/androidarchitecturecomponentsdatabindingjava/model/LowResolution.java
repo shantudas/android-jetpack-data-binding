@@ -7,8 +7,7 @@ import com.bumptech.glide.Glide;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Thumbnail {
-
+public class LowResolution {
     @SerializedName("url")
     @Expose
     private String imageUrl;
@@ -27,6 +26,4 @@ public class Thumbnail {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
-
-
 }
