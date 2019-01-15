@@ -1,4 +1,4 @@
-package com.snipex.shantu.androidarchitecturecomponentsdatabindingjava;
+package com.snipex.shantu.androidarchitecturecomponentsdatabindingjava.model;
 
 import android.databinding.BindingAdapter;
 import android.widget.ImageView;

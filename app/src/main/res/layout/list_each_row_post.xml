@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="post"
+            type="com.snipex.shantu.androidarchitecturecomponentsdatabindingjava.model.Post" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop"
+            bind:imageUrl="@{post.postImages.thumbnail.imageUrl}" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/imgViewLove"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/ic_heart"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgViewLove"
+            android:text="@{post.likes.count}"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</layout>

@@ -2,8 +2,8 @@
     <string name="app_name">AndroidArchitectureComponentsDataBindingJava</string>
 
     <!--
-        This is an Instagram access token
-        You can get your api key from https://www.instagram.com/developer/
+        Instagram access token
+        You can get your access token from https://www.instagram.com/developer/
         Step-1 : Register Your Application
         Step-2 : Authentication
 
@@ -19,4 +19,5 @@
 
     -->
     <string name="access_token_instagram">YOUR_ACCESS_TOKEN</string>
+
 </resources>
