@@ -8,6 +8,9 @@ import com.bumptech.glide.request.RequestOptions;
 
 public class User {
 
+    /*
+     *   This class is for getting user information
+     * */
     private String username;
     private String full_name;
     private String profile_picture;
@@ -71,7 +74,7 @@ public class User {
     }
 
 
-    public class Counts{
+    public class Counts {
         private String media;
         private String follows;
         private String followed_by;

@@ -8,6 +8,11 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class LowResolution {
+
+    /*
+     *  This is class is for getting low resolution of instagram images.
+     *  image height = 320 , width = 320
+     * */
     @SerializedName("url")
     @Expose
     private String imageUrl;
