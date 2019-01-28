@@ -1,5 +1,5 @@
-# AndroidArchitectureComponentsDataBindingJava
-This repository contains Android Architecture Components ( Data Binding, Live Data, View Model )
+# Instagram Profile 
+Recreating instagram profile using android architecture components ( Data Binding, Live Data, View Model)
 
 ## About This Project
 In this project we will build an instagram profile using android architecture components
