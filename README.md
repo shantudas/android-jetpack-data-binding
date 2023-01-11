@@ -56,9 +56,9 @@ Anyone can contribute in this project.
 
 **Shantu Chandra Dash** 
 * [GitHub](https://github.com/shantudas)
-* [Facebook](https://www.facebook.com/shantudashbd)
-* [Linkedin](https://www.linkedin.com/in/shantudashbd/)
-* [Instagram](https://www.instagram.com/shantudashbd/)
+* [Facebook](https://www.facebook.com/shantuchandradas)
+* [Linkedin](https://www.linkedin.com/in/shantuchandradas)
+* [Twitter](https://www.twitter.com/shantucdas)
 
 
 ## License
